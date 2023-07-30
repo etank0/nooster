@@ -11,12 +11,12 @@ News site to find and bookmark top headlines filtered by few parameters.
 - [Requirements](#Requirements)
 - [Result](#Result)
 
-## Setup:
+## Setup
 To deploy the the website(on local server) we need to set up a virtual environment having all the required dependencies. Everything is explained on the Flask website :arrow_down:
 
 <a href="https://flask.palletsprojects.com/en/2.2.x/installation/"><img src = "https://user-images.githubusercontent.com/89385145/231574201-a823f3ec-ff4b-47f0-9677-6eb74c020cfd.png" height = "100px"></a>
 
-## TechStack:
+## TechStack
 - Python(Flask)
 - HTML5
 - CSS
@@ -28,7 +28,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - Flask-SQLAlchemy
 - Requests
 
-## Requirements:
+## Requirements
 Here is the quick setup in Windows and Linux/Mac os . First go to any desired directory : 
 ```
 git clone https://github.com/etank0/nooster
@@ -85,7 +85,7 @@ flask run
 ```
 ##### That's it! Now the web application would be deployed on your local server.
 
-## Result:
+## Result
 - #### Login Page
 ![image](https://github.com/etank0/nooster/assets/89385145/f99ea8d2-8169-46e6-b77d-1630ab7da254)
 
