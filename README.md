@@ -1,5 +1,5 @@
 <picture>
-  <img alt="Nooster logo" src = "https://github.com/kosspbl/comparatea/blob/main/static/noosterlogo-zoom.png" height = "110px" >
+  <img alt="Nooster logo" src = "https://github.com/etank0/nooster/blob/main/static/nooster-head.png" height = "110px" >
 </picture>
 
 News site to find and bookmark top headlines filtered by few parameters.
@@ -10,7 +10,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 <a href="https://flask.palletsprojects.com/en/2.2.x/installation/"><img src = "https://user-images.githubusercontent.com/89385145/231574201-a823f3ec-ff4b-47f0-9677-6eb74c020cfd.png" height = "300px"></a>
 
 ## Requirements : 
-Here is quick setup in Windows and Linux/Mac os . First go to any desired directory : 
+Here is the quick setup in Windows and Linux/Mac os . First go to any desired directory : 
 ```
 git clone https://github.com/etank0/nooster
 ```
