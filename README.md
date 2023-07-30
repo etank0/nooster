@@ -6,10 +6,10 @@ News site to find and bookmark top headlines filtered by few parameters.
 
 ## Table of Contents
 
-- [Setup](#Setup)
-- [TechStack](#TechStack)
-- [Requirements](#Requirements)
-- [Result](#Result)
+- [`Setup`](#Setup)
+- [`TechStack`](#TechStack)
+- [`Requirements`](#Requirements)
+- [`Result`](#Result)
 
 ## Setup
 To deploy the the website(on local server) we need to set up a virtual environment having all the required dependencies. Everything is explained on the Flask website :arrow_down:
@@ -24,9 +24,9 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - News API
 
 #### Python-Libraries(to be installed)
-- Flask
-- Flask-SQLAlchemy
-- Requests
+- [`Flask`](https://flask.palletsprojects.com/en/)
+- [`Flask-SQLAlchemy`](https://flask-sqlalchemy.palletsprojects.com/)
+- [`Requests`](https://pypi.org/project/requests/)
 
 ## Requirements
 Here is the quick setup in Windows and Linux/Mac os . First go to any desired directory : 
