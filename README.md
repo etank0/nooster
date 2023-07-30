@@ -44,7 +44,7 @@ After this let's create a virtual environment to install all the python librarie
 python3 -m venv venv
 . venv/bin/activate
 ```
-###### Now we can install all the dependencies / libraries.
+##### Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
 . venv/bin/activate
