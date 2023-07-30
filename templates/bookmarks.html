@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bookmarks
+{% endblock %}
+
+{% block main %}
+    <h4 class="display-6 text-center">
+        <div class="head-book">
+                <i class="fa fa-bookmark text-primary"></i> 
+                <span style="color:black;">Bookmarks</span>
+        </div>
+    </h4>
+    {% if not exist: %}
+    <p class="mb-5 medium text-center text-muted">Nothing to show here!</p>
+    {% else: %} 
+    <div class="home-grid bookmarks-content-box">
+        {% for entry in bktable: %}
+        <div class="article-box">
+            <a href="{{ entry.url }}" class="link-dark link-offset-2" style="text-decoration:none;">
+            {% if entry.imageurl: %}
+            <img src="{{ entry.imageurl }}" class="article-img">
+            {% endif %}
+            <div class="article-title">
+                {{ entry.title }}
+            </div>
+            </a>
+            <div class="article-footer">
+                <form action="/bookmarks" method="post">
+                    <input id="book-index" name="book-index" type="hidden" value="{{ bktable.index(entry) }}">
+                    <button class="del-bookmark-btn" type="submit"><i class="fa fa-trash text-primary"></i></button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endblock %}

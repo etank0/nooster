@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    {% if pref: %}
+        <h4 class="display-6 home-heading">
+            <div class="head-home">
+                <a href="/" class="head-home-link" style="text-decoration:none;">
+                    <i class="fa fa-newspaper-o text-primary"></i> 
+                    <span style="color:black;">Top Headlines</span>
+                </a>
+                <div class="pref-home">
+                <a href="/preferences" class="pref-home-link">
+                    <i class="fa fa-gear text-muted"></i>
+                </a>
+                </div>
+            </div>
+           
+        </h4>
+        <div class="home-grid home-content-box">
+            {% for article in articles: %}
+            <div class="article-box">
+            {% for key, value in article.items(): %}
+                {% if key=="url": %}
+            <a href="{{ value }}" class="link-dark link-offset-2" style="text-decoration:none;">
+                {% elif key=="urlToImage": %}
+                    {% if value: %}
+                    <img src="{{ value }}" class="article-img">
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+                <div class="article-title">
+                    {{ article["title"]}}
+                </div>
+            </a>
+                {% if article["description"]: %}
+                <div class="article-desc">
+                    {{ article["description" ]}}
+                </div>
+                {% endif %}
+            <div class="article-footer">
+                <p class="article-auth text-muted">
+                    {{ article["author"] }}, {{ article["source"]["name"] }}<br>
+                    {{ article["publishedAt"][0:10] }}
+                </p>
+                <form action="/" method="post">
+                    <input id="article-index" name="article-index" type="hidden" value="{{ articles.index(article) }}">
+                    <button class="bookmark-btn" type="submit"><i class="fa fa-bookmark text-primary"></i></button>
+                </form>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else: %}
+        <p class="mb-5 medium text-center text-muted">
+            First Login Detected! Nothing to show here! Update <a href="/preferences"><i class="fa fa-gear text-muted"></i>Preferences</a>!
+        </p>
+         <iframe src='https://gfycat.com/ifr/AccurateUnfinishedBergerpicard' frameborder='0' scrolling='no' allowfullscreen style="width:350px;height:350px;"></iframe>
+    {% endif %}
+{% endblock %}

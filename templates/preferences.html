@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Preferences
+{% endblock %}
+
+{% block main %}
+     <h4 class="display-6 text-center">
+        <div class="head-pref">
+                <i class="fa fa-gear text-primary"></i> 
+                <span style="color:black;">Preferences</span>
+        </div>
+    </h4>
+    <form action="/preferences" method="post">
+        <div class="mb-3">
+            <select name="country" id="country" class="form-select mx-auto pref-select">
+                {% if not pref: %}
+                    <option selected disabled>-- Select Country--</option>
+                {% endif %}
+                {% for country in countries %}
+                    {% if en_country == countries.index(country): %}
+                        <option selected value="{{ country }}">{{ country }}</option>
+                    {% else %}
+                        <option value="{{ country }}">{{ country }}</option>
+                    {% endif %}
+
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <select name="category" id="category" class="form-select mx-auto pref-select">
+                {% if not pref: %}
+                    <option selected disabled>-- Select Category--</option>
+                {% endif %}
+                {% for category in categories %}
+                    {% if en_category == category: %}
+                        <option selected value="{{ category }}">{{ category }}</option>
+                    {% else %}
+                        <option value="{{ category }}">{{ category }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button> 
+    </form>
+{% endblock %}
