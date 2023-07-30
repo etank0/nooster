@@ -49,7 +49,7 @@ python3 -m venv venv
 pip install -r requirements.txt
 . venv/bin/activate
 ```
-###### Exporting the API_KEY
+##### Exporting the API_KEY
 We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
 ```
 export API_KEY=123abcd456
@@ -59,18 +59,18 @@ export API_KEY=123abcd456
 py -3 -m venv venv
 venv\Scripts\activate
 ```
-###### Now we can install all the dependencies / libraries.
+##### Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
 venv\Scripts\activate
 ```
 - #### Running :
-###### Simply run the app.py python file...
+##### Simply run the app.py python file...
 ```
 python3 app.py
 ```
-###### Or
+##### Or
 ```
 flask run
 ```
-###### That's it! Now the web application would be deployed on your local server.
+##### That's it! Now the web application would be deployed on your local server.
