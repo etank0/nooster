@@ -4,10 +4,28 @@
 
 News site to find and bookmark top headlines filtered by few parameters.
 
+## Table of Contents
+
+- [Setup](#Setup)
+- [TechStack](#TechStack)
+- [Requirements](#Requirements)
+- [Result](#Result)
+
 ## Setup
 To deploy the the website(on local server) we need to set up a virtual environment having all the required dependencies. Everything is explained on the Flask website :arrow_down:
 
 <a href="https://flask.palletsprojects.com/en/2.2.x/installation/"><img src = "https://user-images.githubusercontent.com/89385145/231574201-a823f3ec-ff4b-47f0-9677-6eb74c020cfd.png" height = "100px"></a>
+
+## TechStack:
+- Python(Flask)
+- HTML5
+- CSS
+- JavaScript
+
+#### Python-Libraries(to be installed)
+- Flask
+- Flask-SQLAlchemy
+- Requests
 
 ## Requirements : 
 Here is the quick setup in Windows and Linux/Mac os . First go to any desired directory : 
