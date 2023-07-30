@@ -16,7 +16,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 
 <a href="https://flask.palletsprojects.com/en/2.2.x/installation/"><img src = "https://user-images.githubusercontent.com/89385145/231574201-a823f3ec-ff4b-47f0-9677-6eb74c020cfd.png" height = "100px"></a>
 
-## TechStack:
+## TechStack
 - Python(Flask)
 - HTML5
 - CSS
@@ -28,7 +28,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - Flask-SQLAlchemy
 - Requests
 
-## Requirements : 
+## Requirements
 Here is the quick setup in Windows and Linux/Mac os . First go to any desired directory : 
 ```
 git clone https://github.com/etank0/nooster
