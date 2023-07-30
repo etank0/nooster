@@ -20,6 +20,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - Python(Flask)
 - HTML5
 - CSS
+- Bootstrap
 - JavaScript
 - News API
 
