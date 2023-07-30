@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ###### Exporting the API_KEY
 We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
 ```
-export API_KEY = 123abcd456
+export API_KEY=123abcd456
 ```
 - #### Similarly On Windows
 ```
