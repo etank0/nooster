@@ -21,6 +21,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - HTML5
 - CSS
 - JavaScript
+- News API
 
 #### Python-Libraries(to be installed)
 - Flask
@@ -38,7 +39,7 @@ cd nooster
 Now we have successfully cloned the directory on our local system.
 After this let's create a virtual environment to install all the python libraries.
 
-- On Linux/ Mac OS:
+- On Linux/Mac:
 ```
 python3 -m venv venv
 . venv/bin/activate
@@ -57,6 +58,12 @@ Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
 venv\Scripts\activate
+```
+- Exporting the API_KEY
+We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
+On Linux/Mac:
+```
+export API_KEY = 123abcd456
 ```
 - Running :
 Simply run the app.py python file...
