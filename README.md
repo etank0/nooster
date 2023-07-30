@@ -1,5 +1,5 @@
 <picture>
-  <img alt="Nooster logo" src = "https://github.com/etank0/nooster/blob/main/static/nooster-head.png" height = "110px" >
+  <img alt="Nooster logo" src = "https://github.com/etank0/nooster/blob/main/static/nooster-head.png" height = "150px" >
 </picture>
 
 News site to find and bookmark top headlines filtered by few parameters.
@@ -57,12 +57,22 @@ export API_KEY=123abcd456
 - #### Similarly On Windows
 ```
 py -3 -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 ##### Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
-venv\Scripts\activate
+.\venv\Scripts\activate
+```
+##### Exporting the API_KEY
+We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
+For CMD
+```
+set API_KEY="123abcd456"
+```
+For Powershell
+```
+$env:API_KEY="123abcd456"
 ```
 - #### Running :
 ##### Simply run the app.py python file...
@@ -74,3 +84,13 @@ python3 app.py
 flask run
 ```
 ##### That's it! Now the web application would be deployed on your local server.
+
+## Result
+- #### Login Page
+![image](https://github.com/etank0/nooster/assets/89385145/f99ea8d2-8169-46e6-b77d-1630ab7da254)
+
+- #### Home Page
+![image](https://github.com/etank0/nooster/assets/89385145/4cf7ffb0-9b06-4a2e-988a-b4990e16176a)
+
+- #### Bookmarks Page
+![image](https://github.com/etank0/nooster/assets/89385145/5b304da9-b3b8-465f-b057-7c730efd8b2c)
