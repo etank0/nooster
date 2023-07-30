@@ -39,39 +39,38 @@ cd nooster
 Now we have successfully cloned the directory on our local system.
 After this let's create a virtual environment to install all the python libraries.
 
-- On Linux/Mac:
+- #### On Linux/Mac:
 ```
 python3 -m venv venv
 . venv/bin/activate
 ```
-Now we can install all the dependencies / libraries.
+###### Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
 . venv/bin/activate
 ```
-- Similarly On Windows
+###### Exporting the API_KEY
+We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
+```
+export API_KEY = 123abcd456
+```
+- #### Similarly On Windows
 ```
 py -3 -m venv venv
 venv\Scripts\activate
 ```
-Now we can install all the dependencies / libraries.
+###### Now we can install all the dependencies / libraries.
 ```
 pip install -r requirements.txt
 venv\Scripts\activate
 ```
-- Exporting the API_KEY
-We need to export the API KEY provided by News API account into our environment so that modules.py can access the key.
-On Linux/Mac:
-```
-export API_KEY = 123abcd456
-```
-- Running :
-Simply run the app.py python file...
+- #### Running :
+###### Simply run the app.py python file...
 ```
 python3 app.py
 ```
-Or
+###### Or
 ```
 flask run
 ```
-That's it! Now the web application would be deployed on your local server.
+###### That's it! Now the web application would be deployed on your local server.
