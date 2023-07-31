@@ -4,6 +4,9 @@
 
 News site to find and bookmark top headlines filtered by few parameters.
 
+#### Video Demo:
+https://youtu.be/J--_HKv-J8c
+
 ## Table of Contents
 
 - [`Setup`](#setup)
@@ -21,9 +24,10 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - HTML5
 - CSS
 - Bootstrap
+- Font Awesome
 - JavaScript
 - News API
-
+(Image files in "/static" folder were created by me using open-source software Krita.)
 #### Python-Libraries(to be installed)
 - [`Flask`](https://flask.palletsprojects.com/en/)
 - [`Flask-SQLAlchemy`](https://flask-sqlalchemy.palletsprojects.com/)
