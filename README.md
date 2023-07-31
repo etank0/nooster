@@ -1,15 +1,15 @@
 <picture>
-  <img alt="Nooster logo" src = "https://github.com/etank0/nooster/blob/main/static/nooster-head.png" height = "150px" >
+  <img alt="Nooster logo" src = "./static/nooster-head.png" height = "150px" >
 </picture>
 
 News site to find and bookmark top headlines filtered by few parameters.
 
 ## Table of Contents
 
-- [`Setup`](#Setup)
-- [`TechStack`](#TechStack)
-- [`Requirements`](#Requirements)
-- [`Result`](#Result)
+- [`Setup`](#setup)
+- [`TechStack`](#techstack)
+- [`Requirements`](#requirements)
+- [`Result`](#result)
 
 ## Setup
 To deploy the the website(on local server) we need to set up a virtual environment having all the required dependencies. Everything is explained on the Flask website :arrow_down:
@@ -20,6 +20,7 @@ To deploy the the website(on local server) we need to set up a virtual environme
 - Python(Flask)
 - HTML5
 - CSS
+- Bootstrap
 - JavaScript
 - News API
 
