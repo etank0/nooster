@@ -45,6 +45,7 @@
 
 .content-box-image > img {
     max-width: 100%;
+    max-height: 650px;
 }
 
 .form-box {
