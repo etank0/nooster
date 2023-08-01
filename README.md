@@ -1,11 +1,14 @@
 <picture>
-  <img alt="Nooster logo" src = "./static/nooster-head.png" height = "150px" >
+  <a href="https://nooster.pythonanywhere.com"><img alt="Nooster logo" src = "./static/nooster-head.png" height = "150px" ></a>
 </picture>
 
 News site to find and bookmark top headlines filtered by few parameters.
 
+#### Deployment:
+[`nooster.pythonanywhere.com`](https://nooster.pythonanywhere.com)
+
 #### Video Demo:
-https://youtu.be/J--_HKv-J8c
+[`Youtube`](https://youtu.be/J--_HKv-J8c)
 
 ## Table of Contents
 
