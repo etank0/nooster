@@ -42,9 +42,6 @@ class Bookmarks(db.Model):
     url = db.Column(db.String, nullable=False)
     imageurl = db.Column(db.String)
 
-with app.app_context():
-    db.create_all()
-
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
@@ -251,7 +248,14 @@ def logout():
     # Redirect user to login form
     return redirect("/")
 
+@app.route("/chat")
+def chat():
+    """ChatBox Route"""
+    return render_template("chat.html")
+
 if __name__ == "__main__":
     # creating the tables
+    with app.app_context():
+        db.create_all()
    
-    app.run()
+    app.run(host='127.0.0.1',port=8000,debug=True)
