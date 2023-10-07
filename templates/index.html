@@ -4,8 +4,18 @@
     Home
 {% endblock %}
 
+{% block pref_header %}
+    {% if not pref: %}
+        <header>
+            <div class="alert alert mb-0 text-center" role="alert" style="background-color:#fffee4;">
+                <i class="fa fa-exclamation"></i>
+                Currently technology news from USA is being shown. Please update 'Preferences' for desired news!
+            </div>
+        </header>
+    {% endif %}
+{% endblock %}
+
 {% block main %}
-    {% if pref: %}
         <h4 class="display-6 home-heading">
             <div class="head-home">
                 <a href="/" class="head-home-link" style="text-decoration:none;">
@@ -54,10 +64,4 @@
             </div>
             {% endfor %}
         </div>
-    {% else: %}
-        <p class="mb-5 medium text-center text-muted">
-            First Login Detected! Nothing to show here! Update <a href="/preferences"><i class="fa fa-gear text-muted"></i>Preferences</a>!
-        </p>
-         <iframe src='https://gfycat.com/ifr/AccurateUnfinishedBergerpicard' frameborder='0' scrolling='no' allowfullscreen style="width:350px;height:350px;"></iframe>
-    {% endif %}
 {% endblock %}

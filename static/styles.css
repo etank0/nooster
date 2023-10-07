@@ -111,6 +111,11 @@
     opacity: 70%;
 }
 
+.pref-alert, .pref-alert-outer {
+    width: 100%;
+    margin: 10px 0;
+}
+
 .article-box {
     display: flex;
     flex-direction: column;

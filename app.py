@@ -60,15 +60,19 @@ def after_request(response):
 def index():
     user_id = session["user_id"]
     pref = int(User.query.filter_by(id=user_id).first().pref)
+
+
     if not pref:
-        return render_template("index.html", pref=pref)
+        articles = getHeadlines()
+    else:
+        pref_entry = Preferences.query.filter_by(userid=user_id).first()
+        # finding countrycode
+        counid = pref_entry.countryid
+        councode = countries[counid][country_list[counid]]
 
-    pref_entry = Preferences.query.filter_by(userid=user_id).first()
-    # finding countrycode
-    counid = pref_entry.countryid
-    councode = countries[counid][country_list[counid]]
+        articles = getHeadlines(councode, pref_entry.category)
 
-    articles = getHeadlines(councode, pref_entry.category)
+    
 
     if articles == 400:
         return error("API Side Connection Error!")
